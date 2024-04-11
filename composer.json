@@ -8,9 +8,9 @@
   "type": "yii2-extension",
   "license": "MIT",
   "require": {
-    "php": "^7.2|^8.0",
+    "php": ">=7.2",
     "yiisoft/yii2": "^2.0",
-    "sentry/sdk": "4.0.*"
+    "sentry/sentry": "^4"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
@@ -46,6 +46,9 @@
       },
       "git-skip-update": "2 days",
       "pattern-skip-version": "(-build|-patch)"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true
     }
   },
   "repositories": [
